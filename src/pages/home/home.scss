@@ -1,0 +1,17 @@
+page-home {
+
+  .scroll-content{
+    input[type=file]{
+      z-index:-1;
+      visibility: hidden;
+      height:0;
+      width:0;
+    }
+    [ion-button]{
+      display:block;
+      margin:5rem auto;
+    }
+
+  }
+
+}

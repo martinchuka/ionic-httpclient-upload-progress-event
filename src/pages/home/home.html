@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+         Uploader
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="response">{{response}}</div>
+
+  <div class="display" *ngIf="isFileImage()">
+    <img [src]="files.url | urlSanitizer"/>
+  </div>
+
+  <button ion-button color="primary"  (click)="openActionSheet()">Browse files</button>
+
+
+  <button ion-button color="danger" (click)="upload()" *ngIf="files.blob">Upload</button>
+
+
+  <input type="file" #file (change)="selectFile($event)"/>
+</ion-content>
