@@ -3,23 +3,23 @@
 
 
 #### To install
-#####Install dependencies
+##### Install dependencies
 ```npm install```  
 
-#####On browser  
+##### On browser  
 ```ionic serve --lab```  
 
 
-#####On iOS
+##### On iOS
 ```ionic cordova build ios --prod ```  
 
 
-#####On Android
+##### On Android
 ```ionic cordova build android --prod```
 
-#####Start a test server
+##### Start a test server
 We are using [upload test server](https://www.npmjs.com/package/upload-test-server) as a test server and it is also installed on the project dev dependency,
-to start run:  
+to start run:   
 
 ```npm run start-server```  
 Available default on port 8989  
